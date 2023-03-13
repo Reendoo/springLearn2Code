@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringLearn2CodeApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SpringLearn2CodeApplication.class, args);
 	}
 
