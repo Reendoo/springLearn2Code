@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 @Entity
 public class Director {
@@ -41,5 +42,18 @@ public class Director {
 
     public void setDirectors(Set<Movie> directors) {
         this.directors = directors;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Director director = (Director) o;
+        return id.equals(director.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
