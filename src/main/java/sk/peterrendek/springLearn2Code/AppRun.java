@@ -6,8 +6,27 @@ import sk.peterrendek.springLearn2Code.services.MovieService;
 
 @Component
 public class AppRun {
-    @Autowired
+
+    // injektovanie pomocou triedy
+//    @Autowired
+//    MovieService movieService;
+
+    //injektovanie pomocou konstruktora
+//    @Autowired
+//    MovieService movieService;
+//    public AppRun(MovieService movieService) {
+//        this.movieService = movieService;
+//    }
+    //injekcia cez setter
+
+
     MovieService movieService;
+    @Autowired
+    public void setMovieService(MovieService movieService) {
+        System.out.println("Injektujem cez setter");
+        this.movieService = movieService;
+    }
+
     public void run(){
     movieService.createAddAddMovie();
     }
