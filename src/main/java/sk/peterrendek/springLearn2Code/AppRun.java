@@ -1,7 +1,9 @@
 package sk.peterrendek.springLearn2Code;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import sk.peterrendek.springLearn2Code.services.HelloWorldService;
 import sk.peterrendek.springLearn2Code.services.MovieService;
 
 @Component
@@ -22,12 +24,16 @@ public class AppRun {
 
     MovieService movieService;
     @Autowired
-    public void setMovieService(MovieService movieService) {
-        System.out.println("Injektujem cez setter");
-        this.movieService = movieService;
-    }
+//    @Qualifier("slovakHelloWorldImpl")
+    HelloWorldService helloWorldService;
+//    @Autowired
+//    public void setMovieService(MovieService movieService) {
+//        System.out.println("Injektujem cez setter");
+//        this.movieService = movieService;
+//    }
 
     public void run(){
-    movieService.createAddAddMovie();
+//    movieService.createAddAddMovie();
+        helloWorldService.sayHallo();
     }
 }
