@@ -24,7 +24,7 @@ public class AppRun {
 
     MovieService movieService;
     @Autowired
-//    @Qualifier("slovakHelloWorldImpl")
+//    @Qualifier("englishHelloWordImpl")
     HelloWorldService helloWorldService;
 //    @Autowired
 //    public void setMovieService(MovieService movieService) {
