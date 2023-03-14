@@ -6,6 +6,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 import sk.peterrendek.springLearn2Code.services.HelloWorldService;
+import sk.peterrendek.springLearn2Code.services.impl.PrintService;
 
 @SpringBootApplication
 //@ComponentScan(basePackages = {"sk.peterrendek.services","sk.peterrendek.springLearn2Code"})
@@ -27,8 +28,11 @@ public class SpringLearn2CodeApplication {
 //		String str = context.getBean(StrangersClass.class).getVers();
 //		System.out.println(str);
 
+//		ConfigurableApplicationContext context = SpringApplication.run(SpringLearn2CodeApplication.class, args);
+//		context.getBean(HelloWorldService.class).sayHallo();
+
 		ConfigurableApplicationContext context = SpringApplication.run(SpringLearn2CodeApplication.class, args);
-		context.getBean(HelloWorldService.class).sayHallo();
+		context.getBean(PrintService.class).print();
 
 	}
 
