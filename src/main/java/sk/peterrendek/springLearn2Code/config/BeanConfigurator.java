@@ -4,9 +4,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import sk.strangerpackage.StrangersClass;
 
-@Configuration
+//@Configuration
 public class BeanConfigurator {
-    @Bean
+//    @Bean
     public StrangersClass getChoral(){
         return new StrangersClass();
     }

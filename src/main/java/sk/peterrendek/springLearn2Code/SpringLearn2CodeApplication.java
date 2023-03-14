@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ImportResource;
 import sk.strangerpackage.StrangersClass;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"sk.peterrendek.services","sk.peterrendek.springLearn2Code"})
+@ImportResource("classpath:bean-configurator.xml")
 public class SpringLearn2CodeApplication {
 
 	public static void main(String[] args) {
