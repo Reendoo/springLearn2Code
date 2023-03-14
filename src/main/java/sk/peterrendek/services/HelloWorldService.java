@@ -1,4 +1,4 @@
-package sk.peterrendek.springLearn2Code.services;
+package sk.peterrendek.services;
 
 public interface HelloWorldService {
     void sayHallo();

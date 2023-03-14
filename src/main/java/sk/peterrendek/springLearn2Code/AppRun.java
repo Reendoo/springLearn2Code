@@ -1,17 +1,19 @@
 package sk.peterrendek.springLearn2Code;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-import sk.peterrendek.springLearn2Code.services.HelloWorldService;
-import sk.peterrendek.springLearn2Code.services.MovieService;
+import sk.peterrendek.services.HelloWorldService;
+import sk.peterrendek.services.MovieService;
+import sk.peterrendek.springLearn2Code.repositories.MovieRepository;
 
 @Component
 public class AppRun {
 
     // injektovanie pomocou triedy
-//    @Autowired
-//    MovieService movieService;
+    @Autowired
+    MovieService movieService;
+
+
 
     //injektovanie pomocou konstruktora
 //    @Autowired
@@ -22,7 +24,7 @@ public class AppRun {
     //injekcia cez setter
 
 
-    MovieService movieService;
+//    MovieService movieService;
     @Autowired
 //    @Qualifier("englishHelloWordImpl")
     HelloWorldService helloWorldService;
@@ -33,7 +35,8 @@ public class AppRun {
 //    }
 
     public void run(){
-//    movieService.createAddAddMovie();
-        helloWorldService.sayHallo();
+    movieService.createAddAddMovie();
+    helloWorldService.sayHallo();
+
     }
 }

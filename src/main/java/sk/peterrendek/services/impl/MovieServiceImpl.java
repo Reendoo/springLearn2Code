@@ -1,10 +1,9 @@
-package sk.peterrendek.springLearn2Code.services.impl;
+package sk.peterrendek.services.impl;
 
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.stereotype.Service;
 import sk.peterrendek.springLearn2Code.model.Movie;
 import sk.peterrendek.springLearn2Code.repositories.MovieRepository;
-import sk.peterrendek.springLearn2Code.services.MovieService;
+import sk.peterrendek.services.MovieService;
 //@Service(ConfigurableBeanFactory.SCOPE_PROTOTYPE) -pre kazdom volani beanu sa vytvori
 @Service // je to singleton, stale sa pouziva rovnaky
 public class MovieServiceImpl implements MovieService {

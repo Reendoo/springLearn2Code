@@ -1,9 +1,10 @@
-package sk.peterrendek.springLearn2Code.services.impl;
+package sk.peterrendek.services.impl;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import sk.peterrendek.springLearn2Code.services.HelloWorldService;
+import sk.peterrendek.services.HelloWorldService;
+
 @Service
 @Profile("SVK") //"!SVK" - neni profil SVK
 @Primary
