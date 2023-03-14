@@ -1,9 +1,9 @@
-package sk.peterrendek.services.impl;
+package sk.peterrendek.springLearn2Code.services.impl;
 
 import org.springframework.stereotype.Service;
-import sk.peterrendek.services.HelloWorldService;
+import sk.peterrendek.springLearn2Code.services.HelloWorldService;
 
-@Service
+//@Service
 public class SlovakHelloWorldImpl implements HelloWorldService {
     @Override
     public void sayHallo() {

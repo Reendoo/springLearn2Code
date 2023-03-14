@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
-import sk.strangerpackage.StrangersClass;
+import sk.peterrendek.springLearn2Code.services.HelloWorldService;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"sk.peterrendek.services","sk.peterrendek.springLearn2Code"})
+//@ComponentScan(basePackages = {"sk.peterrendek.services","sk.peterrendek.springLearn2Code"})
 @ImportResource("classpath:bean-configurator.xml")
 public class SpringLearn2CodeApplication {
 
@@ -23,9 +23,13 @@ public class SpringLearn2CodeApplication {
 //		SpringApplication.run(SpringLearn2CodeApplication.class, args);
 
 		// pouzitie cudzzej kniznice
+//		ConfigurableApplicationContext context = SpringApplication.run(SpringLearn2CodeApplication.class, args);
+//		String str = context.getBean(StrangersClass.class).getVers();
+//		System.out.println(str);
+
 		ConfigurableApplicationContext context = SpringApplication.run(SpringLearn2CodeApplication.class, args);
-		String str = context.getBean(StrangersClass.class).getVers();
-		System.out.println(str);
+		context.getBean(HelloWorldService.class).sayHallo();
+
 	}
 
 }

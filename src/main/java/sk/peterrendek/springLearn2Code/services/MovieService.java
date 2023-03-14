@@ -1,4 +1,4 @@
-package sk.peterrendek.services;
+package sk.peterrendek.springLearn2Code.services;
 
 import sk.peterrendek.springLearn2Code.model.Movie;
 

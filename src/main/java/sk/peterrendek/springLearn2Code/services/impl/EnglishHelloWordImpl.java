@@ -1,11 +1,11 @@
-package sk.peterrendek.services.impl;
+package sk.peterrendek.springLearn2Code.services.impl;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import sk.peterrendek.services.HelloWorldService;
+import sk.peterrendek.springLearn2Code.services.HelloWorldService;
 
-@Service
-@Profile("eng")
+//@Service
+//@Profile("eng")
 public class EnglishHelloWordImpl implements HelloWorldService {
     @Override
     public void sayHallo() {

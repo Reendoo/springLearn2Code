@@ -2,9 +2,8 @@ package sk.peterrendek.springLearn2Code;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import sk.peterrendek.services.HelloWorldService;
-import sk.peterrendek.services.MovieService;
-import sk.peterrendek.springLearn2Code.repositories.MovieRepository;
+import sk.peterrendek.springLearn2Code.services.HelloWorldService;
+import sk.peterrendek.springLearn2Code.services.MovieService;
 
 @Component
 public class AppRun {
