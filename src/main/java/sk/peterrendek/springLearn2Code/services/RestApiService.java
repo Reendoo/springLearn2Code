@@ -8,6 +8,11 @@ import java.util.List;
 public interface RestApiService {
   ToDo getToDo(long l) ;
   List<ToDo> getToDos();
-
 //  ToDoList getToDoList();
+
+  ToDo getToDo_SPRING(long l) ;
+  List<ToDo> getToDos_SPRING();
+
+
+
 }

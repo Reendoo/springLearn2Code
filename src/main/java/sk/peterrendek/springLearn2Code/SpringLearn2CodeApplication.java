@@ -5,7 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
+import sk.peterrendek.springLearn2Code.model.ToDo;
 import sk.peterrendek.springLearn2Code.services.HelloWorldService;
+import sk.peterrendek.springLearn2Code.services.RestApiService;
 import sk.peterrendek.springLearn2Code.services.impl.PrintService;
 
 @SpringBootApplication
@@ -31,8 +33,14 @@ public class SpringLearn2CodeApplication {
 //		ConfigurableApplicationContext context = SpringApplication.run(SpringLearn2CodeApplication.class, args);
 //		context.getBean(HelloWorldService.class).sayHallo();
 
+//		ConfigurableApplicationContext context = SpringApplication.run(SpringLearn2CodeApplication.class, args);
+//		context.getBean(PrintService.class).print();
+
 		ConfigurableApplicationContext context = SpringApplication.run(SpringLearn2CodeApplication.class, args);
-		context.getBean(PrintService.class).print();
+		ToDo t = context.getBean(RestApiService.class).getToDo_SPRING(1L);
+		System.out.println(t);
+		System.out.println("===================");
+		System.out.println(context.getBean(RestApiService.class).getToDos_SPRING());
 
 	}
 
