@@ -1,9 +1,6 @@
 package sk.peterrendek.springLearn2Code.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -15,9 +12,10 @@ public class Director {
     private Long id;
     private String name;
     @ManyToMany(mappedBy = "directors")
-    private Set<Movie> movies = new HashSet<>();
+    private Set<Movie> movies;
 
     public Director() {
+        movies = new HashSet<>();
     }
 
     public Long getId() {
@@ -42,6 +40,9 @@ public class Director {
 
     public void setMovies(Set<Movie> movies) {
         this.movies = movies;
+    }
+    public void addMovie(Movie m){
+        movies.add(m);
     }
 
     @Override

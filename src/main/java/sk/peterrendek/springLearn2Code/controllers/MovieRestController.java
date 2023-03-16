@@ -31,7 +31,21 @@ public class MovieRestController {
         }else{
             return movieService.getAllMovies();
         }
-
     }
+    @PostMapping("/movies")
+    MovieDTO addMovie(@RequestBody MovieDTO movieDTO){
+        return movieService.addMovie(movieDTO);
+    }
+    @PutMapping("/movies/{id}")
+    MovieDTO updateMovie(@RequestBody MovieDTO movieDTO,@PathVariable long id){
+        return movieService.updateMovie(movieDTO,id);
+    }
+
+    @DeleteMapping("/movies/{id}")
+    void deleteById(@PathVariable long id){
+        movieService.deleteById(id);
+    }
+
+
 
 }

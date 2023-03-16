@@ -12,4 +12,12 @@ public interface MovieService {
     MovieDTO getMovieById(long id);
     List<MovieDTO> getAllMovies();
     List <MovieDTO> getMoviesByName(String name);
+
+    Movie createAndAddMovieFinal(String filmName, String ... directorNames);
+
+    MovieDTO addMovie(MovieDTO movieDTO);
+
+    MovieDTO updateMovie(MovieDTO movieDTO, long id);
+
+    void deleteById(long id);
 }

@@ -17,5 +17,7 @@ public class DataInit  implements ApplicationListener<ContextRefreshedEvent> {
 //        movieService.createAndAddMovie();
 
         movieService.createAndAddMovies();
+
+//        movieService.createAndAddMovieFinal("Stalingrad","Stalin","Meinstein","Konev");
     }
 }
