@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import sk.peterrendek.springLearn2Code.repositories.MovieRepository;
 
 @Controller
+@RequestMapping("/api")
 public class MovieController {
 
     MovieRepository movieRepository;

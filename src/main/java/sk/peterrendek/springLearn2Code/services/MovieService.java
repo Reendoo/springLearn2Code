@@ -6,9 +6,10 @@ import sk.peterrendek.springLearn2Code.model.dto.MovieDTO;
 import java.util.List;
 
 public interface MovieService {
-    Movie createAddAddMovie();
+    Movie createAndAddMovie();
+    List<Movie> createAndAddMovies();
 
     MovieDTO getMovieById(long id);
     List<MovieDTO> getAllMovies();
-    MovieDTO findMovieByName(String name);
+    List <MovieDTO> getMoviesByName(String name);
 }

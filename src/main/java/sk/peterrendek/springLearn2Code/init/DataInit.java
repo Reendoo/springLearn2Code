@@ -13,7 +13,9 @@ public class DataInit  implements ApplicationListener<ContextRefreshedEvent> {
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        movieService.createAddAddMovie();
-        movieService.createAddAddMovie();
+//        movieService.createAndAddMovie();
+//        movieService.createAndAddMovie();
+
+        movieService.createAndAddMovies();
     }
 }

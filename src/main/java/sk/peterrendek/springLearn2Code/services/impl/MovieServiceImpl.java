@@ -7,7 +7,9 @@ import sk.peterrendek.springLearn2Code.model.dto.MovieDTO;
 import sk.peterrendek.springLearn2Code.repositories.MovieRepository;
 import sk.peterrendek.springLearn2Code.services.MovieService;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 //@Service(ConfigurableBeanFactory.SCOPE_PROTOTYPE) -pre kazdom volani beanu sa vytvori
 @Service // je to singleton, stale sa pouziva rovnaky
@@ -22,24 +24,45 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public Movie createAddAddMovie() {
+    public Movie createAndAddMovie() {
         Movie movie = new Movie();
         movie.setName("Fireproof");
         return movieRepository.save(movie);
     }
 
     @Override
+    public List<Movie> createAndAddMovies() {
+        List<Movie> movies = new ArrayList<>();
+        Movie movie = new Movie();
+        movie.setName("Fireproof");
+        movies.add(movieRepository.save(movie));
+
+        movie = new Movie();
+        movie.setName("Fireproof");
+        movies.add(movieRepository.save(movie));
+
+        movie = new Movie();
+        movie.setName("JaBADABO");
+        movies.add(movieRepository.save(movie));
+        return movies;
+    }
+
+    @Override
     public MovieDTO getMovieById(long id) {
-        return MovieMapper.INSTANCE.movieToMovieDTO(movieRepository.findById(id).orElse(null));
+        return movieMapper.movieToMovieDTO(movieRepository.findById(id).orElse(null));
     }
 
     @Override
     public List<MovieDTO> getAllMovies() {
-        return null;
+        return movieRepository.findAll().stream()
+                .map(movieMapper::movieToMovieDTO)
+                .collect(Collectors.toList());
     }
 
     @Override
-    public MovieDTO findMovieByName(String name) {
-        return null;
+    public List<MovieDTO> getMoviesByName(String name) {
+        return movieRepository.findByName(name).stream()
+                .map(movieMapper::movieToMovieDTO)
+                .collect(Collectors.toList());
     }
 }

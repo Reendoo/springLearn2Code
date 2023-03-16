@@ -34,7 +34,7 @@ public class AppRun {
 //    }
 
     public void run(){
-    movieService.createAddAddMovie();
+    movieService.createAndAddMovie();
     helloWorldService.sayHallo();
 
     }

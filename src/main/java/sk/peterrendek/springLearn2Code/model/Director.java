@@ -15,7 +15,7 @@ public class Director {
     private Long id;
     private String name;
     @ManyToMany(mappedBy = "directors")
-    private Set<Movie> directors = new HashSet<>();
+    private Set<Movie> movies = new HashSet<>();
 
     public Director() {
     }
@@ -36,12 +36,12 @@ public class Director {
         this.name = name;
     }
 
-    public Set<Movie> getDirectors() {
-        return directors;
+    public Set<Movie> getMovies() {
+        return movies;
     }
 
-    public void setDirectors(Set<Movie> directors) {
-        this.directors = directors;
+    public void setMovies(Set<Movie> movies) {
+        this.movies = movies;
     }
 
     @Override
