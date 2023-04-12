@@ -35,7 +35,7 @@ principy objektoveho orientovaneho programovania
 - O:  Open close principle
      - ak nieco menis ... nemas znicit cely kod
      - vyuzivanie interfacov aby sa aplikacia lahko rozsirovala
-- L: - Liskov Substitution principle
+- L:  Liskov Substitution principle
      - vhodne navrhutie dedenie a prislusne zaradenie metod k nim...
      - aby nevzniklo nieco ako vozidlo => startujMotor bicykel(tiez vozidlo) startujMotor
 - I:   Interface Segragation Principle
