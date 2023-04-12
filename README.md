@@ -2,7 +2,7 @@
 Based on the https://skillmea.sk/online-kurzy/online-kurz-spring-framework course.<br>
 Used tools and technologies:<br>
 
-Packages:<br>
+Packages:<br><br>
 •	foreignrestapi:
 -	com.fasterxml.jackson
 -	https://www.jsonschema2pojo.org
@@ -18,10 +18,10 @@ Packages:<br>
 -	 hateoas.EntityModell
 -	 org.springframework.hateoas.server.mvc.WebMvcLinkBuilder
 -	 RepresentationModelAssembler<br>
--	 
+ 
 •	testingprofiles: 
 -	 profiles, primary, applicatation.properties<br>
--	 
+
 •	zothers:
 -	 Configuratiom, external package 
 
