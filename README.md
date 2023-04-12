@@ -30,17 +30,16 @@ Packages:<br><br>
 SOLID - principles 
 principy objektoveho orientovaneho programovania
 
-- S: 
-     - Single responsibility principle
+- S:  Single responsibility principle
      - jedna trieda zodpoveda za jednu vec
-- O: - Open close principle
+- O:  Open close principle
      - ak nieco menis ... nemas znicit cely kod
      - vyuzivanie interfacov aby sa aplikacia lahko rozsirovala
 - L: - Liskov Substitution principle
      - vhodne navrhutie dedenie a prislusne zaradenie metod k nim...
      - aby nevzniklo nieco ako vozidlo => startujMotor bicykel(tiez vozidlo) startujMotor
-- I:  - Interface Segragation Principle
+- I:   Interface Segragation Principle
      - radsej viac mensich rozhrani ako jedno velke 
-- D:  - Dependency Inversion Principle
+- D:   Dependency Inversion Principle
      -modulacia ... aby bola siroka skalovatelnost
     
