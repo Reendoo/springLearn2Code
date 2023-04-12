@@ -1,3 +1,20 @@
+Based on the https://skillmea.sk/online-kurzy/online-kurz-spring-framework course.<br>
+Used tools and technologies:<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SOLID - principles 
 principy objektoveho orientovaneho programovania
 
