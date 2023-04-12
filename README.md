@@ -15,9 +15,11 @@ Packages:<br>
 -	spring-boot-starter-data-jpa
 -	 JpaRepository
 -	 org.mapstruct mapping
--	 hateoas.EntityModell,  org.springframework.hateoas.server.mvc.WebMvcLinkBuilder, RepresentationModelAssembler<br>
+-	 hateoas.EntityModell
+-	 org.springframework.hateoas.server.mvc.WebMvcLinkBuilder
+-	 RepresentationModelAssembler <br>
 •	Testingprofiles 
--	 profiles, primary, applicatation.properties
+-	 profiles, primary, applicatation.properties<br>
 -	Zothers:
 -	 Configuratiom, external package 
 
