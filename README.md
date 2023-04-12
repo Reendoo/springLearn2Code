@@ -17,8 +17,8 @@ Packages:<br>
 -	 org.mapstruct mapping
 -	 hateoas.EntityModell
 -	 org.springframework.hateoas.server.mvc.WebMvcLinkBuilder
--	 RepresentationModelAssembler <br>
-•	Testingprofiles 
+-	 RepresentationModelAssembler<br>
+•	Testingprofiles: 
 -	 profiles, primary, applicatation.properties<br>
 -	Zothers:
 -	 Configuratiom, external package 
