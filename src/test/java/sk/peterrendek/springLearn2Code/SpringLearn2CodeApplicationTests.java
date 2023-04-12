@@ -5,9 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SpringLearn2CodeApplicationTests {
-
 	@Test
 	void contextLoads() {
 	}
-
 }

@@ -5,25 +5,18 @@ import java.util.List;
 import java.util.Random;
 
 public class StrangersClass {
-    private List<String> verses = null;
+    private final List<String> poems;
 
     public StrangersClass() {
-        this.verses = Arrays.asList(
-                "Sk slovan skurvena bratislava ....",
-                "Co voda to potok co belasy to kokot",
-                "Kurvy belase ....",
-                "Rozkopal som, slovanistu, hned mi je lepsie...");
+        this.poems = Arrays.asList(
+                "Hello\nIs there anybody in there?\nJust nod if you can hear me\nIs there anyone home?",
+                "New car, caviar, four-star daydream \nThink I'll buy me a football team",
+                "If you don't eat yer meat, \nyou can't have any pudding.\nHow can you have any pudding\nif you don't eat yer meat?",
+                "Mother should I run for president\nMother should I trust the government\nMother will they put me in the firing line\nOoooh aah, is it just a waste of time");
     }
 
-    public String getVers() {
+    public String getPoem() {
         Random rnd = new Random();
-        return verses.get(rnd.nextInt(verses.size()));
-    }
-
-    public static void main(String[] args) {
-        StrangersClass str = new StrangersClass();
-        for (int i = 0; i < 10; i++) {
-            System.out.println(str.getVers());
-        }
+        return poems.get(rnd.nextInt(poems.size()));
     }
 }
