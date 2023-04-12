@@ -19,10 +19,10 @@ Packages:<br>
 -	 org.springframework.hateoas.server.mvc.WebMvcLinkBuilder
 -	 RepresentationModelAssembler<br>
 -	 
-•	Testingprofiles: 
+•	testingprofiles: 
 -	 profiles, primary, applicatation.properties<br>
 -	 
--	Zothers:
+•	zothers:
 -	 Configuratiom, external package 
 
 
