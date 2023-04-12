@@ -1,16 +1,25 @@
+#Spring learn
 Based on the https://skillmea.sk/online-kurzy/online-kurz-spring-framework course.<br>
 Used tools and technologies:<br>
 
+Packages:
+•	foreignrestapi:
+-	com.fasterxml.jackson
+-	https://www.jsonschema2pojo.org
+-	org.springframework.http (ResponseEntity, Converters, JsonMapping)
+-	org.springframework.web.client.RestTemplate<br>
 
-
-
-
-
-
-
-
-
-
+•	myrestfullappi:
+-	 spring web
+-	 MVC
+-	spring-boot-starter-data-jpa
+-	 JpaRepository
+-	 org.mapstruct mapping
+-	 hateoas.EntityModell,  org.springframework.hateoas.server.mvc.WebMvcLinkBuilder, RepresentationModelAssembler<br>
+•	Testingprofiles 
+-	 profiles, primary, applicatation.properties
+-	Zothers:
+-	 Configuratiom, external package 
 
 
 
@@ -21,7 +30,7 @@ principy objektoveho orientovaneho programovania
 S - Single responsibility principle
     - jedna trieda zodpoveda za jednu vec
 O - Open close principle
-    - ak nieco menis... nemas rozjebat cely kod
+    - ak nieco menis... nemas znicit cely kod
     -vyuzivanie interfacov aby sa aplikacia lahko rozsirovala
 L - Liskov Substitution principle
     vhodne navrhutie dedenie a prislusne zaradenie metod k nim...
