@@ -22,8 +22,8 @@ Packages:<br><br>
 •	testingprofiles: 
 -	 profiles, primary, applicatation.properties<br>
 
-•	zothers:
--	 Configuratiom, external package 
+•zothers:
+-	 Configuration, external package 
 <hr><hr>
 
 
